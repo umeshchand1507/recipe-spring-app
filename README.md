@@ -1,1 +1,1 @@
-# recipe-spring-app
+# spring5-recipe-app
