@@ -5,7 +5,23 @@
     <title>Recipe App</title>
 </head>
 <body>
-    <h1>My Recipes</h1>
+    <h2>My Recipes</h2>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <td style="width: 10px;">ID</td>
+            <td style="width: 100px;">Description</td>
+            <td style="width: 10px;">Preparation Time</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="recipe : ${recipes}">
+            <td th:text="${recipe.id}">1</td>
+            <td th:text="${recipe.description}">Maggie</td>
+            <td th:text="${recipe.prepTime}">2 Mins</td>
+        </tr>
+        </tbody>
+    </table>
 
 </body>
 </html>
